@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos Verduleria VerdeVida</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Poppins', Arial, sans-serif;
+            background-color: #f3fff2;
+            color: #2f3e46;
+        }
+
+        header {
+            background: linear-gradient(135deg, #56ab2f, #a8e063);
+            color: white;
+            padding: 50px 20px;
+            text-align: center;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+        }
+
+        header h1 {
+            font-size: 2.7em;
+            margin: 0;
+        }
+
+        section {
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        h2 {
+            color: #2e7d32;
+            font-size: 2.3em;
+            margin-bottom: 30px;
+        }
+
+        .productos {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 25px;
+        }
+
+        .producto {
+            background-color: white;
+            border-radius: 15px;
+            width: 230px;
+            padding: 20px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            transition: 0.3s;
+        }
+
+        .producto:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+        }
+
+        .producto img {
+            width: 100%;
+            height: 180px;
+            border-radius: 8px;
+            object-fit: cover;
+        }
+
+        .precio {
+            font-weight: bold;
+            margin-top: 10px;
+            color: #388e3c;
+            font-size: 1.1em;
+        }
+
+        .estante {
+            width: 100%;
+            height: 8px;
+            background-color: #8B4513;
+            border-radius: 4px;
+            margin: 25px 0;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.25);
+        }
+
+        @media (max-width: 600px) {
+            .producto {
+                width: 90%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Productos - VerdeVida 🌱</h1>
+</header>
+
+<!-- BOTÓN VOLVER AL INICIO -->
+<div style="text-align:center; margin-top:20px;">
+    <a href="PPP.index.html"
+       style="
+           display:inline-block;
+           background:#2e7d32;
+           color:white;
+           padding:12px 20px;
+           border-radius:8px;
+           text-decoration:none;
+           font-weight:bold;
+           box-shadow:0 4px 10px rgba(0,0,0,0.2);
+           transition:0.3s;">
+       ⬅ Volver al Inicio
+    </a>
+</div>
+
+<!-- ===========================
+            FRUTAS
+=========================== -->
+<section>
+    <h2>🍎 Frutas</h2>
+    <div class="productos">
+
+        <div class="producto"><img src="Manzanas.jpg"><h3>Manzana</h3><p class="precio">$20/kg</p>Descuento del 33%</p></div>
+        <div class="producto"><img src="Platanos.jpg"><h3>Plátano</h3><p class="precio">$20/kg</p></p></div>
+        <div class="producto"><img src="Naranjas.jpg"><h3>Naranja</h3><p class="precio">$25/kg</p></p></div>
+        <div class="producto"><img src="Peras.jpg"><h3>Pera</h3><p class="precio">$28/kg</p></p></div>
+        <div class="producto"><img src="Uvas.jpg"><h3>Uva</h3><p class="precio">$45/kg</p>Descuento del 25%</p></div>
+        <div class="producto"><img src="sandia.jpg"><h3>Sandía</h3><p class="precio">$18/kg</p></p></div>
+
+        <div class="estante"></div>
+
+        <div class="producto"><img src="melon.jpg"><h3>Melón</h3><p class="precio">$22/kg</p></p></div>
+        <div class="producto"><img src="fresa.jpg"><h3>Fresa</h3><p class="precio">$55/kg</p></p></div>
+        <div class="producto"><img src="kiwi.jpg"><h3>Kiwi</h3><p class="precio">$48/kg</p></p></div>
+        <div class="producto"><img src="mango.jpg"><h3>Mango</h3><p class="precio">$35/kg</p></p></div>
+        <div class="producto"><img src="papaya.jpg"><h3>Papaya</h3><p class="precio">$26/kg</p></p></div>
+        <div class="producto"><img src="coco.jpg"><h3>Coco</h3><p class="precio">$10/pza</p>Descuento del 75%</p></div>
+
+    </div>
+</section>
+
+<!-- ===========================
+            VERDURAS
+=========================== -->
+<section>
+    <h2>🥦 Verduras</h2>
+    <div class="productos">
+
+        <div class="producto"><img src="zanahoria.jpg"><h3>Zanahoria</h3><p class="precio">$15/kg</p></p></div>
+        <div class="producto"><img src="tomate.jpg"><h3>Tomate</h3><p class="precio">$18/kg</p></p></div>
+        <div class="producto"><img src="brocoli.jpg"><h3>Brócoli</h3><p class="precio">$11/kg</p>Descuento de 50%</p></div>
+        <div class="producto"><img src="lechuga.jpg"><h3>Lechuga</h3><p class="precio">$12/pza</p></p></div>
+        <div class="producto"><img src="pepino.jpg"><h3>Pepino</h3><p class="precio">$14/kg</p></p></div>
+        <div class="producto"><img src="papa.jpg"><h3>Papa</h3><p class="precio">$16/kg</p></p></div>
+
+        <div class="estante"></div>
+
+        <div class="producto"><img src="cebolla.jpg"><h3>Cebolla</h3><p class="precio">$15/kg</p>Descuento de 25%</p></div>
+        <div class="producto"><img src="chile.jpg"><h3>Chile Verde</h3><p class="precio">$20/kg</p>Descuento del 33%</p></div>
+        <div class="producto"><img src="espinaca.jpg"><h3>Espinaca</h3><p class="precio">$18/atado</p></p></div>
+        <div class="producto"><img src="calabaza.jpg"><h3>Calabaza</h3><p class="precio">$17/kg</p></p></div>
+        <div class="producto"><img src="coliflor.jpg"><h3>Coliflor</h3><p class="precio">$25/pza</p></p></div>
+        <div class="producto"><img src="remolacha.jpg"><h3>Betabel</h3><p class="precio">$11/kg</p>Descuento del 50%</p></div>
+
+    </div>
+</section>
+
+<!-- BOTÓN REALIZAR PEDIDO -->
+<div style="text-align:center; margin:40px 0 50px;">
+    <a href="Compras.html"
+       style="
+           display:inline-block;
+           background:#2e7d32;
+           color:white;
+           padding:12px 20px;
+           border-radius:8px;
+           text-decoration:none;
+           font-weight:bold;
+           box-shadow:0 4px 10px rgba(0,0,0,0.2);
+           transition:0.3s;">
+       🛒 Realizar Pedido
+    </a>
+</div>
+
+</body>
+</html>

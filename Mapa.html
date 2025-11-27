@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Ubicaciones</title>
+    <style>
+        body {
+            background-color: #f3fff4;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .mapa {
+            background: #ffffff;
+            padding: 25px;
+            margin: 25px auto;
+            width: 90%;
+            max-width: 750px;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            text-align: center;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .mapa:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+        }
+
+        .mapa h2 {
+            color: #2e7d32;
+            font-size: 1.7em;
+            margin-bottom: 15px;
+        }
+
+        .horario {
+            font-size: 1.1em;
+            color: #333;
+            margin-bottom: 15px;
+            background: #e8f5e9;
+            padding: 10px;
+            border-radius: 8px;
+            display: inline-block;
+        }
+
+        .mapa iframe {
+            width: 100%;
+            height: 350px;
+            border: none;
+            border-radius: 12px;
+        }
+
+        @media (max-width: 600px) {
+            .mapa iframe {
+                height: 260px;
+            }
+        }
+
+    </style>
+</head>
+<body>
+
+<!-- VOLVER AL INICIO -->
+    <div style="text-align:center; margin-top:20px;">
+        <a href="PPP.index.html"
+           style="
+               display:inline-block;
+               background:#2e7d32;
+               color:white;
+               padding:12px 20px;
+               border-radius:8px;
+               text-decoration:none;
+               font-weight:bold;
+               box-shadow:0 4px 10px rgba(0,0,0,0.2);
+               transition:0.3s;">
+           ⬅ Volver al Inicio
+        </a>
+    </div>
+
+    <!-- MAPA 1 -->
+    <section class="mapa">
+        <h2>📍 Encuéntranos aquí</h2>
+        <div class="horario"><b>Horario:</b> 8:00 AM – 6:00 PM</div>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29556.90933005907!2d-100.99508548916018!3d22.178773299999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x842aa1c01333a75d%3A0xd36ba81d41b2796b!2sFruteria%20Gallardo!5e0!3m2!1ses-419!2smx!4v1763979910452!5m2!1ses-419!2smx"></iframe>
+    </section>
+
+    <!-- MAPA 2 -->
+    <section class="mapa">
+        <h2>📍 Y aquí</h2>
+        <div class="horario"><b>Horario:</b> 9:00 AM – 7:00 PM</div>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29560.015834335765!2d-100.9663838891602!3d22.16399669999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x842aa3c46f843de3%3A0x9f52c22889272611!2sFrutas%20y%20Verduras%20San%20Juditas!5e0!3m2!1ses-419!2smx!4v1763979878451!5m2!1ses-419!2smx"></iframe>
+    </section>
+
+    <!-- MAPA 3 -->
+    <section class="mapa">
+        <h2>📍 Y aquí</h2>
+        <div class="horario"><b>Horario:</b> 7:30 AM – 5:30 PM</div>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29560.015834335765!2d-100.9663838891602!3d22.16399669999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x842aa10046b7e007%3A0x3bc8f2618be31854!2sFruter%C3%ADa%20y%20verduler%C3%ADa!5e0!3m2!1ses-419!2smx!4v1763979810595!5m2!1ses-419!2smx"></iframe>
+    </section>
+
+    <!-- MAPA 4 -->
+    <section class="mapa">
+        <h2>📍 Y aquí</h2>
+        <div class="horario"><b>Horario:</b> 8:00 AM – 6:00 PM</div>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29556.90933005907!2d-100.99508548916018!3d22.178773299999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x842aa137866c30cf%3A0x9c5af63c29379cc7!2zU8O6cGVyIEZydXRlcsOtYSBSb2Ryw61ndWV6!5e0!3m2!1ses-419!2smx!4v1763979969848!5m2!1ses-419!2smx"></iframe>
+    </section>
+
+    <!-- REALIZAR PEDIDO -->
+    <div style="text-align:center; margin:40px 0;">
+        <a href="Compras.html"
+           style="
+               display:inline-block;
+               background:#2e7d32;
+               color:white;
+               padding:15px 25px;
+               border-radius:8px;
+               text-decoration:none;
+               font-weight:bold;
+               font-size:1.2em;
+               box-shadow:0 4px 10px rgba(0,0,0,0.2);
+               transition:0.3s;">
+           🛒 Realizar Pedido
+        </a>
+    </div>
+
+</body>
+</html>

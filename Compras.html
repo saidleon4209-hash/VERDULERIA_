@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+       <meta charset="utf-8">
+       <meta name="viewport" content="width=device-width, initial-scale=1">
+       <title>Formulario de Compra</title>
+</head>
+<body style="background-color:#e8fbe8; margin:0; padding:20px; font-family:Arial;">
+
+<section style="background:#ffffff; padding:30px; margin:40px auto; max-width:600px; 
+                border-radius:15px; box-shadow:0 4px 15px rgba(0,0,0,0.1);">
+
+    <h2 style="text-align:center; color:#2e7d32;">🛒 Formulario de Compra</h2>
+
+    <form action="#" method="POST" style="display:flex; flex-direction:column; gap:15px;">
+
+        <label><b>Nombre completo:</b></label>
+        <input type="text" name="nombre" required 
+        style="padding:10px; border-radius:8px; border:1px solid #ccc;">
+
+        <label><b>Ubicación / Dirección:</b></label>
+        <input type="text" name="ubicacion" required 
+        style="padding:10px; border-radius:8px; border:1px solid #ccc;">
+
+        <label><b>Producto:</b></label>
+        <select id="producto" name="producto"
+        style="padding:10px; border-radius:8px; border:1px solid #ccc;" required>
+            <option value="">Seleccione un producto</option>
+
+            <!-- FRUTAS -->
+            <option>Manzana</option>
+            <option>Plátano</option>
+            <option>Naranja</option>
+            <option>Pera</option>
+            <option>Uva</option>
+            <option>Sandía</option>
+            <option>Melón</option>
+            <option>Fresa</option>
+            <option>Kiwi</option>
+            <option>Mango</option>
+            <option>Papaya</option>
+            <option>Coco</option>
+
+            <!-- VERDURAS -->
+            <option>Zanahoria</option>
+            <option>Tomate</option>
+            <option>Brócoli</option>
+            <option>Lechuga</option>
+            <option>Pepino</option>
+            <option>Papa</option>
+            <option>Cebolla</option>
+            <option>Chile Verde</option>
+            <option>Espinaca</option>
+            <option>Calabaza</option>
+            <option>Coliflor</option>
+            <option>Betabel</option>
+        </select>
+
+        <div id="cantidadBox" style="display:none;">
+            <label><b>Kilos:</b></label>
+            <input type="number" name="kilos" min="1"
+            style="padding:10px; border-radius:8px; border:1px solid #ccc;">
+        </div>
+
+        <label><b>Comentarios adicionales (opcional):</b></label>
+        <textarea name="comentarios" rows="3"
+        style="padding:10px; border-radius:8px; border:1px solid #ccc;"></textarea>
+
+        <!-- Botón -->
+        <button type="submit"
+                style="background:#2e7d32; color:white; padding:12px; border:none;
+                       font-size:1.1em; border-radius:10px; cursor:pointer;
+                       box-shadow:0 4px 10px rgba(0,0,0,0.2);">
+            Enviar Pedido
+        </button>
+
+    </form>
+</section>
+
+<script>
+
+document.getElementById("producto").addEventListener("change", function() {
+    if (this.value !== "") {
+        document.getElementById("cantidadBox").style.display = "block";
+    } else {
+        document.getElementById("cantidadBox").style.display = "none";
+    }
+});
+</script>
+
+</body>
+</html>
